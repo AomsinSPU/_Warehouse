@@ -1,0 +1,101 @@
+/* Container */
+.locationx-container-ing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2e6;
+    padding: 20px;
+    margin-top: -350px;
+}
+
+/* Header */
+.locationx-header-ing {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 48px;
+    margin-top: 70px;
+
+}
+
+/* Dropdown */
+.locationx-dropdown-ing {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+
+}
+
+/* Button */
+.locationx-button-ing {
+    padding: 10px 30px;
+    background-color: #ff7e42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 35px;
+}
+
+.locationx-button-ing:hover {
+    background-color: #e66b35;
+}
+
+.popup-overlay-ing {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup content */
+.popup-ing {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 300px;
+
+}
+
+.popup-checkmark {
+    font-size: 50px;
+    color: green;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.popup-content-ing h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+}
+
+.popup-button-ing {
+    padding: 10px 20px;
+    background-color: #df774b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-button-ing:hover {
+    background-color: #e66b35;
+}

@@ -1,0 +1,246 @@
+.history-containerx {
+  padding-top: 50px;
+  padding-left: 128px;
+}
+
+.headerz {
+  font-size: 50px;
+  color: #333;
+}
+
+/* Navigation buttons */
+.navigationx {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: auto;
+}
+
+.nav-buttonx {
+  padding: 8px 15px;
+  font-size: 18px;
+  background-color: #473366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Date Range */
+.date-rangex {
+  background-color: #473366;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.date-rangex span {
+  font-size: 16px;
+  color: white;
+}
+
+/* Search box */
+.search-containerx {
+  background-color: #473366;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.search-containerx span {
+  font-size: 16px;
+}
+
+.search-containerx input {
+  padding: 5px;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Table styles */
+.tablex {
+  margin-top: 20px;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.tablex th {
+  background-color: #473366;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+  text-align: left;
+  color: white;
+  border: none;
+}
+
+.tablex td {
+  padding: 10px;
+  color: black;
+  border: none;
+}
+
+.table-rowx {
+  background-color: #d3d3d3;
+  text-align: left;
+}
+
+table .table-headerx {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+table .table-headerx span {
+  flex: 1;
+}
+
+/* Row content with flex layout */
+table .row-contentx {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 90%;
+}
+
+table .toggle-buttonx {
+  text-align: center;
+}
+
+table .toggle-btnx {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+table .expanded-rowx {
+  background-color: #f9f9f9;
+}
+
+table .expanded-detailsx {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Make "หมวดหมู่" bold and larger */
+/* table .expanded-detailsx span:first-child {
+    font-size: 20px; 
+    font-weight: bold; 
+    color: #333; 
+  } */
+
+.toggle-buttonx {
+  background-color: #d3d3d3;
+}
+
+.itemx {
+  margin-left: 180px;
+}
+
+.menux {
+  margin-right: 770px;
+}
+
+.categoryx {
+  font-size: 20px;
+  color: #333;
+  transform: translateY(-53px);
+  margin-left: 500px;
+}
+
+.categoryx-x {
+  transform: translateY(30px);
+}
+
+.categoryc {
+  font-size: 20px;
+  color: #333;
+  transform: translateY(-53px);
+  margin-left: 50px;
+}
+
+.categoryc-c {
+  transform: translateY(30px);
+}
+
+.categoryv {
+  font-size: 20px;
+  color: #333;
+  transform: translateY(-53px);
+  margin-left: 50px;
+}
+
+.categoryv-v {
+  margin-left: 15px;
+  transform: translateY(30px);
+}
+
+.categoryb {
+  font-size: 20px;
+  color: #333;
+  transform: translateY(-53px);
+  margin-right: 200px;
+}
+
+.categoryb-b {
+  margin-left: 35px;
+  transform: translateY(30px);
+}
+
+/* กำหนดกรอบสีม่วงให้กับดรอปดาวน์หมวดหมู่ */
+.category-filtersiax {
+  transform: translateX(1140px);
+  padding: 5px;
+  border: 2px solid #473366;
+  /* กรอบสีม่วง */
+  border-radius: 8px;
+  background-color: #473366;
+  display: inline-block;
+}
+
+.category-dropdownx {
+  background-color: #473366;
+  color: white;
+}
+
+/* ปรับปรุงให้มีพื้นที่รอบๆ ดรอปดาวน์ */
+.filters-containerx {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.qrsia {
+  width: 100px;
+  height: 100px;
+  /* transform: translateX(-100px); */
+  /* transform: translateY(-15px); */
+  transform: translate(-100px, -8px);
+  margin-right: 10px;
+}
+
+/* .item-filtersiax { */
+/* margin-bottom: 10px;
+  padding: 5px;
+  border: 2px solid #473366; /* กรอบสีม่วง */
+/* border-radius: 8px; */
+/* background-color: #473366; */
+/* display: inline-block; */
+/* margin-left: 180px; */
+/* } */
+
+/* .item-dropdownx {
+  background-color: #473366;
+  color: white;
+  margin-left: 10px;
+} */

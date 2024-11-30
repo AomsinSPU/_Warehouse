@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Navbar.css */
+.navbar {
+    background-color: #473366;
+    width: 100%;
+    height: 92px;
+}
+
+.navbar-container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 128px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    align-items: center;
+}
+
+.navbar-left {
+    grid-column: span 1;
+}
+
+.navbar-logo {
+    height: 55px;
+    width: 118px;
+}
+
+/* ส่วนกลาง (เมนู) */
+.navbar-center {
+    margin-left: 200px;
+    font-size: 20px;
+    grid-column: span 8;
+    /* ใช้พื้นที่ 8 คอลัมน์ */
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 80px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ส่วนขวา (ไอคอนและโปรไฟล์) */
+.navbar-right {
+    grid-column: span 3;
+    /* ใช้พื้นที่ 2 คอลัมน์ */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ส่วนที่เหลือคงเดิม */
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(34, 33, 33, 0.1);
+    /* border-radius: 20px; */
+}
+
+.profile-pic {
+    margin-top: 2px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.rank {
+    align-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* ก่อน */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .navbar-container {
+        padding: 0 64px;
+        /* ลด padding เมื่อหน้าจอเล็กลง */
+        gap: 16px;
+    }
+}
+
+@media (max-width: 968px) {
+    .navbar-container {
+        grid-template-columns: repeat(6, 1fr);
+        /* ปรับเป็น 6 คอลัมน์ */
+        padding: 0 32px;
+    }
+
+    .navbar-left {
+        grid-column: span 1;
+    }
+
+    .navbar-center {
+        grid-column: span 4;
+    }
+
+    .navbar-right {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .navbar-container {
+        grid-template-columns: 1fr;
+        /* แสดงเป็นแนวตั้ง */
+        gap: 16px;
+    }
+
+    .navbar-left,
+    .navbar-center,
+    .navbar-right {
+        grid-column: 1 / -1;
+        /* ใช้พื้นที่เต็ม */
+        justify-content: center;
+    }
+}
+
+/* Notification Bell */
+.notification-wrapper {
+    position: relative;
+}
+
+.notification-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Popup สำหรับการแจ้งเตือน */
+.notification-popup {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 360px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notification-popup h4 {
+    font-weight: 600;
+    color: #473366;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-popup li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.notification-popup li:last-child {
+    border-bottom: none;
+}
+
+.notification-icon {
+    color: #FD6E2B;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.notification-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.notification-date {
+    font-size: 16px;
+    color: #666;
+}
+
+.notification-message {
+    font-size: 12px;
+    color: #333;
+}
+
+.notification-number {
+    font-size: 12px;
+}
+
+.notification-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.notification-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: #5A9321;
+    font-size: 25px;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #fd6e2b;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* หลัง*/
+.dropdown-new-card {
+    position: absolute;
+    top: 100px;
+    /* ปรับตำแหน่งให้เหมาะสม */
+    right: 128px;
+    /* ชิดขวาตาม Navbar */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 256px;
+    z-index: 1000;
+    overflow: hidden;
+    padding: 16px;
+}
+
+/* New Card */
+.new-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.new-card h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.new-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.new-card p {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.rank-small {
+    font-size: 12px;
+    /* ปรับขนาดตัวอักษรให้เล็กลง */
+    color: #555;
+    /* เพิ่มสีอ่อน (ถ้าต้องการ) */
+}
+
+.custom-divider {
+    height: 20px;
+    /* ความหนาของเส้น */
+    background-color: #ff0606;
+    /* สีของเส้น */
+    margin: 10px 0;
+    /* เพิ่มช่องว่างรอบเส้น */
+}
+
+.red-border-button {
+    border: 2px solid red !important;
+    /* กรอบสีแดง */
+    background-color: white !important;
+    /* พื้นหลังสีขาว */
+    color: red !important;
+    /* ฟอนต์สีแดง */
+    padding: 1px 5px;
+    /* ระยะขอบในปุ่ม */
+    border-radius: 5px !important;
+    /* บังคับใช้ขอบมน */
+    /* ขอบมน */
+    font-size: 14px;
+    /* ขนาดฟอนต์ */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เมื่อชี้ */
+    transition: background-color 0.3s, color 0.3s;
+    /* เพิ่มแอนิเมชัน */
+}
+
+.red-border-button:hover {
+    background-color: red !important;
+    /* พื้นหลังเปลี่ยนเป็นสีแดงเมื่อ hover */
+    color: white !important;
+    /* ฟอนต์เปลี่ยนเป็นสีขาว */
+}
+
+.link {
+    color: black;
+    /* ตั้งค่าสีปกติเป็นสีดำ */
+    text-decoration: none;
+    /* ลบเส้นใต้ */
+    cursor: pointer;
+    /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อ hover */
+}
+
+.link:hover {
+    color: #fd6e2b;
+    /* เมื่อชี้เมาส์ไปที่ลิงก์จะเปลี่ยนเป็นสีส้ม */
+    /* เพิ่มเส้นใต้เมื่อ hover */
+}
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4b286d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 220px;
+    text-align: left;
+
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 8px 12px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #6a3d88;
+
+}

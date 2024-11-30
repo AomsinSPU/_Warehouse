@@ -1,0 +1,122 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+    flex: 2;
+    background-image: url("../../../../public/Image/wear.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Login Form Section */
+.login-form {
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Input Field */
+/* .input-box {
+    margin-bottom: 15px;
+    margin-right: -30px;
+} */
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #4e2368;
+}
+
+.input-wrapper input {
+    display: flex;
+    width: 375px;
+    padding: 10px 10px 10px 40px;
+    /* Add space for icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Remember Me */
+.remember-me {
+    gap: 225px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    font-size: 16px;
+    /* ขนาดเล็กกว่า */
+    color: #4e2368;
+    /* สีให้เข้ากับธีม */
+    text-decoration: none;
+    margin-left: 170px;
+    /* เพิ่มช่องว่างเล็กน้อย */
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    /* เส้นขีดใต้เมื่อ hover */
+}
+
+/* Login Button */
+.login-button {
+    width: 375px;
+    padding: 12px;
+    background-color: #4e2368;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3b1b50;
+}
+
+/* Terms and Conditions */
+.condition {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.condition a {
+    color: #4e2368;
+    text-decoration: none;
+}
+
+.condition a:hover {
+    text-decoration: underline;
+}
